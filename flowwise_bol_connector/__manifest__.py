@@ -1,7 +1,7 @@
 {
     "name": "Bol.com Connector",
     "summary": "Bol.com orders as sales orders in Odoo, tracking back to bol.com, and stock, prices and offers from Odoo. Needs a Flowwise subscription.",
-    "version": "20.0.1.5.0",
+    "version": "20.0.1.5.1",
     "category": "Sales/Sales",
     "author": "NewCraft",
     "website": "https://flowwise.dev/koppelingen/bol-com/odoo/",
