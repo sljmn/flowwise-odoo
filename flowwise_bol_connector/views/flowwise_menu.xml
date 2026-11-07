@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_open_flowwise" model="ir.actions.act_url">
+        <field name="name">Flowwise</field>
+        <field name="url">https://app.flowwise.dev/sign_up?source=odoo_apps</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_flowwise_root"
+              name="Flowwise"
+              action="action_open_flowwise"
+              web_icon="flowwise_bol_connector,static/description/icon.png"
+              sequence="200"/>
+</odoo>

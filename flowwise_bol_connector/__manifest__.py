@@ -1,0 +1,15 @@
+{
+    "name": "Bol.com Connector by Flowwise",
+    "summary": "Bol.com orders as sales orders in Odoo. Tracking back to bol.com. Stock, price and delivery time from Odoo.",
+    "version": "19.0.1.0.0",
+    "category": "Sales/Sales",
+    "author": "NewCraft",
+    "website": "https://flowwise.dev/koppelingen/bol-com/odoo/",
+    "support": "flowwise@newcraft.dev",
+    "license": "LGPL-3",
+    "depends": ["base"],
+    "data": ["views/flowwise_menu.xml"],
+    "images": ["static/description/banner.png"],
+    "application": True,
+    "installable": True,
+}
