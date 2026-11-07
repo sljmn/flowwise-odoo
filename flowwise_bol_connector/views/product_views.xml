@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_bol" model="ir.ui.view">
+        <field name="name">product.template.form.flowwise.bol</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Bol.com" name="flowwise_bol">
+                    <p class="text-muted">Flowwise sends these values to the bol.com offer with the same EAN as the Barcode of this product. Leave a field empty to use your settings in Flowwise.</p>
+                    <group>
+                        <field name="x_flowwise_bol_price"/>
+                        <field name="x_flowwise_bol_delivery_code"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
