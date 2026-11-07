@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Flowwise reads these fields with the Odoo API and sends their values to the bol.com offer with the same EAN. -->
+    <record id="field_bol_price" model="ir.model.fields">
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="name">x_flowwise_bol_price</field>
+        <field name="field_description">Bol.com price</field>
+        <field name="help">The price with VAT for this product on bol.com. Flowwise sends it as it is, instead of the price from your sales price and price rules. Leave it empty to use those.</field>
+        <field name="ttype">float</field>
+        <field name="state">manual</field>
+        <field name="store" eval="True"/>
+    </record>
+
+    <record id="field_bol_delivery_code" model="ir.model.fields">
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="name">x_flowwise_bol_delivery_code</field>
+        <field name="field_description">Bol.com delivery time</field>
+        <field name="help">The delivery time Flowwise sends to bol.com for this product. Leave it empty to use the delivery time you set in Flowwise.</field>
+        <field name="ttype">selection</field>
+        <field name="state">manual</field>
+        <field name="store" eval="True"/>
+    </record>
+
+    <record id="selection_delivery_vvb" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">VVB</field>
+        <field name="name">Shipped via bol.com (VVB)</field>
+        <field name="sequence">0</field>
+    </record>
+    <record id="selection_delivery_my_delivery_promise" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">MY_DELIVERY_PROMISE</field>
+        <field name="name">My delivery promise</field>
+        <field name="sequence">1</field>
+    </record>
+    <record id="selection_delivery_1_2d" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">1-2d</field>
+        <field name="name">1-2 days</field>
+        <field name="sequence">2</field>
+    </record>
+    <record id="selection_delivery_2_3d" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">2-3d</field>
+        <field name="name">2-3 days</field>
+        <field name="sequence">3</field>
+    </record>
+    <record id="selection_delivery_3_5d" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">3-5d</field>
+        <field name="name">3-5 days</field>
+        <field name="sequence">4</field>
+    </record>
+    <record id="selection_delivery_4_8d" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">4-8d</field>
+        <field name="name">4-8 days</field>
+        <field name="sequence">5</field>
+    </record>
+    <record id="selection_delivery_1_8d" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">1-8d</field>
+        <field name="name">1-8 days</field>
+        <field name="sequence">6</field>
+    </record>
+    <record id="selection_delivery_24uurs_23" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-23</field>
+        <field name="name">Ordered before 23:00, delivered tomorrow</field>
+        <field name="sequence">7</field>
+    </record>
+    <record id="selection_delivery_24uurs_22" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-22</field>
+        <field name="name">Ordered before 22:00, delivered tomorrow</field>
+        <field name="sequence">8</field>
+    </record>
+    <record id="selection_delivery_24uurs_21" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-21</field>
+        <field name="name">Ordered before 21:00, delivered tomorrow</field>
+        <field name="sequence">9</field>
+    </record>
+    <record id="selection_delivery_24uurs_20" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-20</field>
+        <field name="name">Ordered before 20:00, delivered tomorrow</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="selection_delivery_24uurs_19" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-19</field>
+        <field name="name">Ordered before 19:00, delivered tomorrow</field>
+        <field name="sequence">11</field>
+    </record>
+    <record id="selection_delivery_24uurs_18" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-18</field>
+        <field name="name">Ordered before 18:00, delivered tomorrow</field>
+        <field name="sequence">12</field>
+    </record>
+    <record id="selection_delivery_24uurs_17" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-17</field>
+        <field name="name">Ordered before 17:00, delivered tomorrow</field>
+        <field name="sequence">13</field>
+    </record>
+    <record id="selection_delivery_24uurs_16" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-16</field>
+        <field name="name">Ordered before 16:00, delivered tomorrow</field>
+        <field name="sequence">14</field>
+    </record>
+    <record id="selection_delivery_24uurs_15" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-15</field>
+        <field name="name">Ordered before 15:00, delivered tomorrow</field>
+        <field name="sequence">15</field>
+    </record>
+    <record id="selection_delivery_24uurs_14" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-14</field>
+        <field name="name">Ordered before 14:00, delivered tomorrow</field>
+        <field name="sequence">16</field>
+    </record>
+    <record id="selection_delivery_24uurs_13" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-13</field>
+        <field name="name">Ordered before 13:00, delivered tomorrow</field>
+        <field name="sequence">17</field>
+    </record>
+    <record id="selection_delivery_24uurs_12" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_bol_delivery_code"/>
+        <field name="value">24uurs-12</field>
+        <field name="name">Ordered before 12:00, delivered tomorrow</field>
+        <field name="sequence">18</field>
+    </record>
+</odoo>

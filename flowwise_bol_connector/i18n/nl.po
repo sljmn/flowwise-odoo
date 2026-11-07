@@ -1,0 +1,140 @@
+# Dutch translation of flowwise_bol_connector
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields,field_description:flowwise_bol_connector.field_bol_price
+msgid "Bol.com price"
+msgstr "Bol.com-prijs"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields,help:flowwise_bol_connector.field_bol_price
+msgid "The price with VAT for this product on bol.com. Flowwise sends it as it is, instead of the price from your sales price and price rules. Leave it empty to use those."
+msgstr "De prijs met btw van dit product op bol.com. Flowwise stuurt hem zo door, in plaats van de prijs uit je verkoopprijs en prijsregels. Laat hem leeg om die te gebruiken."
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields,field_description:flowwise_bol_connector.field_bol_delivery_code
+msgid "Bol.com delivery time"
+msgstr "Bol.com-levertijd"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields,help:flowwise_bol_connector.field_bol_delivery_code
+msgid "The delivery time Flowwise sends to bol.com for this product. Leave it empty to use the delivery time you set in Flowwise."
+msgstr "De levertijd die Flowwise voor dit product naar bol.com stuurt. Laat hem leeg om de levertijd uit Flowwise te gebruiken."
+
+#. module: flowwise_bol_connector
+#: model_terms:ir.ui.view,arch_db:flowwise_bol_connector.product_template_form_bol
+msgid "Bol.com"
+msgstr "Bol.com"
+
+#. module: flowwise_bol_connector
+#: model_terms:ir.ui.view,arch_db:flowwise_bol_connector.product_template_form_bol
+msgid "Flowwise sends these values to the bol.com offer with the same EAN as the Barcode of this product. Leave a field empty to use your settings in Flowwise."
+msgstr "Flowwise stuurt deze waarden naar de bol.com-aanbieding met dezelfde EAN als de barcode van dit product. Laat een veld leeg om je instellingen in Flowwise te gebruiken."
+
+#. module: flowwise_bol_connector
+#: model:ir.actions.act_url,name:flowwise_bol_connector.action_open_flowwise
+#: model:ir.ui.menu,name:flowwise_bol_connector.menu_flowwise_root
+msgid "Flowwise"
+msgstr "Flowwise"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_vvb
+msgid "Shipped via bol.com (VVB)"
+msgstr "Verzenden via Bol.com (VVB)"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_my_delivery_promise
+msgid "My delivery promise"
+msgstr "Mijn leverbelofte"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_1_2d
+msgid "1-2 days"
+msgstr "1-2 dagen"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_2_3d
+msgid "2-3 days"
+msgstr "2-3 dagen"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_3_5d
+msgid "3-5 days"
+msgstr "3-5 dagen"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_4_8d
+msgid "4-8 days"
+msgstr "4-8 dagen"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_1_8d
+msgid "1-8 days"
+msgstr "1-8 dagen"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_23
+msgid "Ordered before 23:00, delivered tomorrow"
+msgstr "Voor 23:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_22
+msgid "Ordered before 22:00, delivered tomorrow"
+msgstr "Voor 22:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_21
+msgid "Ordered before 21:00, delivered tomorrow"
+msgstr "Voor 21:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_20
+msgid "Ordered before 20:00, delivered tomorrow"
+msgstr "Voor 20:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_19
+msgid "Ordered before 19:00, delivered tomorrow"
+msgstr "Voor 19:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_18
+msgid "Ordered before 18:00, delivered tomorrow"
+msgstr "Voor 18:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_17
+msgid "Ordered before 17:00, delivered tomorrow"
+msgstr "Voor 17:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_16
+msgid "Ordered before 16:00, delivered tomorrow"
+msgstr "Voor 16:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_15
+msgid "Ordered before 15:00, delivered tomorrow"
+msgstr "Voor 15:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_14
+msgid "Ordered before 14:00, delivered tomorrow"
+msgstr "Voor 14:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_13
+msgid "Ordered before 13:00, delivered tomorrow"
+msgstr "Voor 13:00 besteld, morgen in huis"
+
+#. module: flowwise_bol_connector
+#: model:ir.model.fields.selection,name:flowwise_bol_connector.selection_delivery_24uurs_12
+msgid "Ordered before 12:00, delivered tomorrow"
+msgstr "Voor 12:00 besteld, morgen in huis"
