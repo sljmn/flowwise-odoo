@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_open_flowwise_power_bi" model="ir.actions.act_url">
+        <field name="name">Power BI</field>
+        <field name="url">https://app.flowwise.dev/sign_up?source=odoo_apps_power_bi</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_power_bi_root"
+              name="Power BI"
+              action="action_open_flowwise_power_bi"
+              groups="base.group_system"
+              web_icon="flowwise_power_bi,static/description/icon.png"
+              sequence="201"/>
+</odoo>
