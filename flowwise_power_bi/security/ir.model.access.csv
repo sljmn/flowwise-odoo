@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_power_bi_sale_order,power_bi sale.order,sale.model_sale_order,group_power_bi_reader,1,0,0,0
+access_power_bi_sale_order_line,power_bi sale.order.line,sale.model_sale_order_line,group_power_bi_reader,1,0,0,0
+access_power_bi_account_move,power_bi account.move,account.model_account_move,group_power_bi_reader,1,0,0,0
+access_power_bi_account_move_line,power_bi account.move.line,account.model_account_move_line,group_power_bi_reader,1,0,0,0
+access_power_bi_product_product,power_bi product.product,product.model_product_product,group_power_bi_reader,1,0,0,0
+access_power_bi_product_template,power_bi product.template,product.model_product_template,group_power_bi_reader,1,0,0,0
+access_power_bi_product_category,power_bi product.category,product.model_product_category,group_power_bi_reader,1,0,0,0
+access_power_bi_crm_team,power_bi crm.team,sales_team.model_crm_team,group_power_bi_reader,1,0,0,0
+access_power_bi_res_partner,power_bi res.partner,base.model_res_partner,group_power_bi_reader,1,0,0,0
+access_power_bi_ir_model,power_bi ir.model,base.model_ir_model,group_power_bi_reader,1,0,0,0
+access_power_bi_stock_move,power_bi stock.move,stock.model_stock_move,group_power_bi_reader,1,0,0,0
+access_power_bi_stock_move_line,power_bi stock.move.line,stock.model_stock_move_line,group_power_bi_reader,1,0,0,0
+access_power_bi_stock_quant,power_bi stock.quant,stock.model_stock_quant,group_power_bi_reader,1,0,0,0
+access_power_bi_stock_location,power_bi stock.location,stock.model_stock_location,group_power_bi_reader,1,0,0,0
+access_power_bi_stock_warehouse,power_bi stock.warehouse,stock.model_stock_warehouse,group_power_bi_reader,1,0,0,0

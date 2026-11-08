@@ -1,0 +1,86 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div style="max-width:880px; margin:0 auto; text-align:center">
+            <div style="font-size:13px; font-weight:800; color:#4d7c0f; text-transform:uppercase; letter-spacing:0.16em; margin-bottom:10px">Power BI connector for Odoo</div>
+            <h2 style="font-size:40px; font-weight:900; color:#0E140F; letter-spacing:-0.02em; line-height:1.1; margin:0 0 14px">Your Odoo sales in Power BI, without exports</h2>
+            <p style="font-size:19px; color:#475569; line-height:1.6; margin:0 0 22px">Flowwise reads your sales orders, invoices, products and customers from Odoo every 6 hours and serves them as an OData feed. Paste the feed address into Power BI, tick the tables you need and build your reports. This module gives Power BI its own Odoo user that can read and change nothing.</p>
+            <div class="d-flex flex-wrap align-items-center justify-content-center" style="margin-bottom:26px">
+                <span style="background-color:#BEF264; color:#0E140F; font-size:14px; font-weight:800; border-radius:999px; padding:8px 16px; margin:4px">7 days free trial</span>
+                <span style="background-color:#0E140F; color:#ffffff; font-size:14px; font-weight:700; border-radius:999px; padding:8px 16px; margin:4px">Read-only Odoo user</span>
+                <span style="background-color:#0E140F; color:#ffffff; font-size:14px; font-weight:700; border-radius:999px; padding:8px 16px; margin:4px">No gateway needed</span>
+                <span style="background-color:#714B67; color:#ffffff; font-size:14px; font-weight:700; border-radius:999px; padding:8px 16px; margin:4px">Odoo Online (Custom), Odoo.sh, on-premise</span>
+            </div>
+        </div>
+        <div class="oe_demo oe_picture oe_screenshot">
+            <img src="screenshot_power_bi_tables.png" alt="Power BI's OData navigator showing the Odoo tables SalesOrders, SalesOrderLines, Invoices, InvoiceLines, Products and Customers"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="font-weight: 800;">Six tables, ready to relate</h2>
+        <ul>
+            <li><b>SalesOrders</b>: number, date, state, salesperson, sales team, company, warehouse, currency and amounts.</li>
+            <li><b>SalesOrderLines</b>: product, quantity ordered, delivered and invoiced, unit price, discount and amounts.</li>
+            <li><b>Invoices</b>: posted customer invoices and credit notes with dates, payment state and the amount still due.</li>
+            <li><b>InvoiceLines</b>: product, quantity and amounts per line, for revenue per product and customer.</li>
+            <li><b>Products</b>: reference, barcode, category, sales price, cost, on hand and forecasted stock.</li>
+            <li><b>Customers</b>: the customers on those orders and invoices, with zip code, city, country and their company.</li>
+        </ul>
+        <p>The tables link on their Id columns, so SalesOrderLines.OrderId points to SalesOrders.Id. Orders and invoices cover the last 24 months. Power BI sees typed columns: dates as dates, amounts as decimals.</p>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="font-weight: 800;">A Power BI user that can only read</h2>
+        <p class="text-center">This module adds a <b>Power BI</b> access right with one level, <b>Read only</b>. Give it to a separate Odoo user and connect that user's API key in Flowwise. The user reads sales orders, invoices, products, stock and customers, and Odoo refuses anything it tries to create, change or delete.</p>
+        <div class="oe_demo oe_picture oe_screenshot">
+            <img src="screenshot_odoo_reader_user.png" alt="An Odoo user with the access right Power BI set to Read only"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="font-weight: 800;">Fresh data on your schedule</h2>
+        <p class="text-center">Flowwise reads Odoo every 6 hours. Set a scheduled refresh in Power BI and your reports show the latest read. Need it sooner? Click Read Odoo now in Flowwise, up to six times a day.</p>
+        <div class="oe_demo oe_picture oe_screenshot">
+            <img src="screenshot_flowwise_feed.png" alt="Flowwise showing when it last read Odoo and how many rows each table holds"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="font-weight: 800;">What you need</h2>
+        <ul>
+            <li>Odoo 18 or 19 with Sales, Invoicing and Inventory.</li>
+            <li>Odoo Online on the Custom plan, Odoo.sh, or Odoo on your own server. Odoo Online Standard and One App Free don't include the external API that Flowwise reads through.</li>
+            <li>A Power BI account.</li>
+            <li>A Flowwise subscription. The module is free. Flowwise is a paid external service by NewCraft, and you can try it free for 7 days.</li>
+        </ul>
+        <h2 class="oe_slogan" style="font-weight: 800; margin-top: 30px;">Get started</h2>
+        <ol>
+            <li>Install this module.</li>
+            <li>Create an Odoo user for Power BI, set Power BI to Read only on its Access Rights tab, and create an API key for it under Security (Account Security in Odoo 18).</li>
+            <li>In Flowwise, connect Odoo with that user's login and API key. Then open Power BI under Connections, choose the Odoo connection and create a password.</li>
+            <li>In Power BI, choose Get data, then OData feed. Paste the feed address, choose Basic and enter the user name and password from Flowwise.</li>
+        </ol>
+        <p>Read the full guide on <a href="https://flowwise.dev/koppelingen/odoo/power-bi/">flowwise.dev/koppelingen/odoo/power-bi</a>.</p>
+        <p>Questions or stuck during setup? Email <a href="mailto:flowwise@newcraft.dev">flowwise@newcraft.dev</a>. Our team in the Netherlands answers in Dutch or English, on Dutch time (CET).</p>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="font-weight: 800;">Which data Flowwise uses</h2>
+        <p>The module adds the Power BI access right and a Power BI menu item for administrators. It sends nothing by itself. Flowwise reads your Odoo data through Odoo's API, only after you connect Odoo in Flowwise with an API key. Delete the key in Odoo and Flowwise stops.</p>
+        <ul>
+            <li>Flowwise reads sales orders, order lines, posted customer invoices and credit notes with their lines, products and the customers on those orders and invoices.</li>
+            <li>Flowwise reads no email addresses, phone numbers or street addresses, and writes nothing to Odoo.</li>
+            <li>Flowwise keeps the latest read so Power BI can fetch it with the password you create. Revoke that password in Flowwise and Power BI loses access at once.</li>
+        </ul>
+    </div>
+</section>

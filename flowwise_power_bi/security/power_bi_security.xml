@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="module_category_power_bi" model="ir.module.category">
+        <field name="name">Power BI</field>
+        <field name="sequence">90</field>
+        <field name="parent_id" ref="base.module_category_productivity"/>
+    </record>
+
+    <!-- Give this to the Odoo user whose API key Flowwise uses for Power BI. It can read the sales orders, invoices,
+         products and customers Power BI shows, and change nothing. -->
+    <record id="group_power_bi_reader" model="res.groups">
+        <field name="name">Read only</field>
+        <field name="category_id" ref="module_category_power_bi"/>
+        <field name="comment">Reads sales orders, invoices, products, stock and customers for Power BI reports through Flowwise. Cannot create, change or delete anything.</field>
+    </record>
+</odoo>
